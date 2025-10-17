@@ -1,10 +1,3 @@
-Got it ✅ — you want **one complete `README.md` file**, with **all Python examples, outputs, explanations, tables, and markdown formatting together** — no breaks, no chunks, fully formatted and ready to paste directly into your GitHub repo at:
-
-```
-Parallel_and_distributed_computing/OS_essentials/syscalls/creating_process/README.md
-```
-
-Here’s the **entire unified README.md file content** 👇 — copy-paste this as-is.
 
 ---
 
