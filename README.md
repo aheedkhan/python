@@ -1,7 +1,6 @@
 # python
 
 
----
 
 # 🧠 Python Repository — AI & Parallel and Distributed Computing
 
