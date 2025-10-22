@@ -182,7 +182,7 @@ pid2 = os.fork()
 print(f"Running in PID: {os.getpid()}, fork() return values: pid1={pid1}, pid2={pid2}")
 ```
 
-### 🖥️ Example Output (order may vary)
+### 🖥️ Example Output (order may vary) (cover in later modules)
 ```
 Start PID: 612
 Running in PID: 612, fork() return values: pid1=613, pid2=614
@@ -273,6 +273,57 @@ The kernel ensures isolation while maintaining the same initial code state.
 
 ---
 
+## 🧩 Memory Layout After `fork()`
+
+When a process is forked, the **memory layout of the child is identical** to the parent — at the moment of duplication.  
+That includes:
+
+- **Code segment (text)** — same instructions  
+- **Data segment** — same initialized and uninitialized variables  
+- **Heap** — same dynamically allocated memory  
+- **Stack** — same function calls and local variables at the time of the fork  
+
+However, Linux uses a technique called **Copy-on-Write (COW):**
+
+- Both parent and child share the same physical memory **until one of them modifies it**  
+- As soon as a process writes to memory, the kernel **creates a private copy** for that process  
+
+💡 This makes `fork()` **fast and memory-efficient** — only modified pages are copied.
+
+---
+
+## 📘 Example — Demonstrating Memory Independence
+
+```python
+# 08.memory_isolation_after_fork.py
+import os
+
+variable = 10
+
+pid = os.fork()
+
+if pid == 0:
+    variable += 5
+    print(f"👶 Child → variable = {variable}, PID: {os.getpid()}")
+else:
+    variable += 20
+    print(f"🧑 Parent → variable = {variable}, PID: {os.getpid()}")
+```
+
+### 🖥️ Example Output
+```output
+👶 Child → variable = 15, PID: 613
+🧑 Parent → variable = 30, PID: 612
+```
+
+
+🧠 **Explanation:**  
+Even though both started from the same memory snapshot,
+changes made by one process do not affect the other —
+each now has its own private memory space after fork().
+
+
+
 ## 🧩 Summary
 
 | Concept | Description |
@@ -290,3 +341,5 @@ The kernel ensures isolation while maintaining the same initial code state.
 `fork()` is how Linux creates new processes — by cloning the caller.  
 After the call, both parent and child continue execution independently,  
 differentiated only by the return value of `fork()`.
+
+---
