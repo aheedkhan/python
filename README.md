@@ -1,7 +1,3 @@
-# python
-
-
-
 # 🧠 Python Repository — AI & Parallel and Distributed Computing
 
 Welcome to this hands-on learning repository that bridges **Artificial Intelligence (AI)** and **Parallel & Distributed Computing (PDC)** — designed to help you build **strong conceptual foundations** while exploring **real system-level implementations**.
