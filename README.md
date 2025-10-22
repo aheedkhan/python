@@ -1,8 +1,8 @@
-# 🧠 Python Repository — AI & Parallel and Distributed Computing
+# 🧠 Python Repository AI & Parallel and Distributed Computing
 
 Welcome to this hands-on learning repository that bridges **Artificial Intelligence (AI)** and **Parallel & Distributed Computing (PDC)** — designed to help you build **strong conceptual foundations** while exploring **real system-level implementations**.
 
----
+
 
 ## 🚀 Overview
 
@@ -15,7 +15,7 @@ This repository contains two main learning tracks:
 
 Each section is structured **step-by-step** — with readable explanations, clear examples, and short conceptual notes that connect **theory to practice**.
 
----
+
 
 ## 🎯 Learning Philosophy
 
@@ -27,7 +27,7 @@ Each topic aims to be:
 * 🔹 **Concept-driven** — builds intuition before diving into advanced systems.
 * 🔹 **Progressive** — start from fundamentals and move toward advanced concepts.
 
----
+
 
 ## 🧩 Repository Structure
 
@@ -48,7 +48,7 @@ Each topic aims to be:
 
 > Each folder is self-contained with its own explanations, examples, and conceptual notes — explore freely in any order.
 
----
+
 
 ## 🧩 Example Focus Areas
 
@@ -57,27 +57,27 @@ Each topic aims to be:
 
 > The repository evolves continuously — more structured content and advanced examples will be added over time.
 
----
+
 
 ## 🧠 Why This Repo Exists
 
 The goal is to make **complex topics easier to visualize and connect** — blending low-level system behavior with high-level AI thinking.
 Whether you’re just starting out or already exploring deep concepts, this repo helps you **see how operating systems and intelligent systems complement each other**.
 
----
+
 
 ## 💡 Philosophy in One Line
 
 > *"Understand the concept deeply enough that code becomes the easiest part."*
 
----
+
 
 ## 🧩 Coming Soon
 
 * 🔸 AI: Pathfinding, Minimax, and Machine Learning Basics
 * 🔸 PDC: Process Management, Concurrency, Synchronization
 
----
+
 
 ## ⚡ Contribution & Updates
 
@@ -85,7 +85,7 @@ This repository is under active development.
 If you find any issues, improvements, or ideas — feel free to suggest or fork it!
 Your feedback will help shape future learning modules and examples.
 
----
+
 
 ## 👨‍💻 About Me — *Aheed Khan*
 
@@ -102,7 +102,7 @@ This repository reflects my learning journey — exploring concepts from the gro
 
 💬 Connect or collaborate — always open to sharing ideas and exploring new challenges.
 
----
+
 
 ⭐ **Thank you for visiting!**
 If you find this repo helpful, don’t forget to **star** ⭐ it — it helps others discover it too!
